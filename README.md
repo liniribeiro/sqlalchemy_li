@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aliniribeiroo/sqlalchemy_li.svg?branch=master)](https://travis-ci.org/aliniribeiroo/sqlalchemy_li)
+
 Projeto criado para armazenar estudos realizados com SQLAlchemy.
 
 
