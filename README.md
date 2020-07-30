@@ -54,9 +54,14 @@ https://alembic.sqlalchemy.org/en/latest/
 
 
 
+Factory-boy: 
+https://factoryboy.readthedocs.io/en/latest/
+https://medium.com/@vittorio.camisa/agile-database-integration-tests-with-python-sqlalchemy-and-factory-boy-6824e8fe33a1
+
+
 Comands:
 Pipenv criar requirements: pipenv lock -r > requirements.txt
-
+pipenv lock -r requirements.txt
 
 
 

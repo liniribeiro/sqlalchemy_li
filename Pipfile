@@ -11,6 +11,7 @@ singleton-decorator = "*"
 pytest = "*"
 python-decouple = "*"
 pytest-dotenv = "*"
+factory-boy = "*"
 
 [requires]
 python_version = "3.8"

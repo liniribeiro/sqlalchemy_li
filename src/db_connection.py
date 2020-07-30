@@ -3,7 +3,7 @@ from contextlib import contextmanager
 from singleton_decorator import singleton
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, scoped_session
 from .settings import TEST
 Base = declarative_base()
 
@@ -14,7 +14,7 @@ class DBConnector:
         print("Session criada")
         print(f"Teste Decouple {TEST}")
         self.engine = create_engine('sqlite:///:memory:', echo=True)
-        self.session = sessionmaker(bind=self.engine)
+        self.session = scoped_session(sessionmaker(bind=self.engine))
         Base.metadata.create_all(self.engine)
 
     @contextmanager
