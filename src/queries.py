@@ -1,6 +1,6 @@
-
+from src.migrations.upgrade import upgrade
 from src.db_connection import DBConnector
-from src.model import User
+from src.models.user import User
 
 
 def save_user():
@@ -15,5 +15,4 @@ def get_user():
         print(db_user)
 
 
-save_user()
-get_user()
+

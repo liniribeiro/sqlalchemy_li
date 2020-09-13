@@ -3,12 +3,11 @@ import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from src.db_connection import Base
-from src.model import User
+from src.models import DeclarativeBase, User
 
 engine = create_engine('sqlite:///:memory:')
 Session = scoped_session(sessionmaker())
-Base.metadata.create_all(engine)
+DeclarativeBase.metadata.create_all(engine)
 
 
 @pytest.fixture(scope='module')

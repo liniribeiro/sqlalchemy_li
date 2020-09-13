@@ -65,6 +65,10 @@ pipenv lock -r requirements.txt
 
 
 
+Alembic
+
+Criar revision:  alembic revision --autogenerate -m "Added account table"
+Aplicar revision: alembic upgrade head
 
 
 

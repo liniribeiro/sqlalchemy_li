@@ -12,6 +12,11 @@ pytest = "*"
 python-decouple = "*"
 pytest-dotenv = "*"
 factory-boy = "*"
+alembic = "*"
+install = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
+flask = "*"
 
 [requires]
 python_version = "3.8"
